@@ -82,9 +82,9 @@ class UserRepository implements UserInterface {
                     'zip'           => $request['zip'],
                     'photo'         => (!empty($request['photo']))?$this->convert($request['photo']):null,
                     'birthday'      => $request['birthday'],
-                    'religion'      => $request['religion'],
                     'blood_type'    => $request['blood_type'],
-                    'role'          => 'student',
+		            'role'          => 'student',
+		            'notes'	        => $request['notes'],
                     'password'      => Hash::make($request['password']),
                 ]);
 
@@ -133,7 +133,6 @@ class UserRepository implements UserInterface {
                     'city'          => $request['city'],
                     'zip'           => $request['zip'],
                     'birthday'      => $request['birthday'],
-                    'religion'      => $request['religion'],
                     'blood_type'    => $request['blood_type'],
                 ]);
 
@@ -183,7 +182,7 @@ class UserRepository implements UserInterface {
                 $class_id = $schoolClass->id;
                 $section_id = $section->id;
             }
-            
+
         }
         try {
             $promotionRepository = new PromotionRepository();

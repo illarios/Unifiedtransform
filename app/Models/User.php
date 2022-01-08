@@ -34,9 +34,9 @@ class User extends Authenticatable
         'zip',
         'photo',
         'birthday',
-        'religion',
         'blood_type',
-        'role',
+	    'role',
+	    'notes',
     ];
 
     /**

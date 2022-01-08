@@ -131,6 +131,10 @@
                                                 <th scope="row">Section:</th>
                                                 <td colspan="3">{{$promotion_info->section->section_name}}</td>
                                             </tr>
+                                            <tr>
+                                                <th scope="row">Notes:</th>
+                                                <td>{{$student->notes}}</td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
