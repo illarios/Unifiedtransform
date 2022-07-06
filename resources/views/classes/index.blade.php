@@ -7,11 +7,11 @@
         <div class="col-xs-11 col-sm-11 col-md-11 col-lg-10 col-xl-10 col-xxl-10">
             <div class="row pt-2">
                 <div class="col ps-4">
-                    <h1 class="display-6 mb-3"><i class="bi bi-diagram-3"></i> Classes</h1>
+                    <h1 class="display-6 mb-3"><i class="bi bi-diagram-3"></i> Τμήματα</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Classes</li>
+                            <li class="breadcrumb-item"><a href="{{route('home')}}">Αρχική</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Τμήματα</li>
                         </ol>
                     </nav>
                     <div class="row">
@@ -28,10 +28,10 @@
                                                     <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#class{{$school_class->id}}" role="tab" aria-current="true"><i class="bi bi-diagram-3"></i> {{$school_class->class_name}}</button>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#class{{$school_class->id}}-syllabus" role="tab" aria-current="false"><i class="bi bi-journal-text"></i> Syllabus</button>
+                                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#class{{$school_class->id}}-syllabus" role="tab" aria-current="false"><i class="bi bi-journal-text"></i> Φυλλάδια</button>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#class{{$school_class->id}}-courses" role="tab" aria-current="false"><i class="bi bi-journal-medical"></i> Courses</button>
+                                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#class{{$school_class->id}}-courses" role="tab" aria-current="false"><i class="bi bi-journal-medical"></i> Μαθήματα</button>
                                                 </li>
                                             </ul>
                                         </div>
@@ -129,10 +129,10 @@
                                         </div>
                                         <div class="card-footer bg-transparent d-flex justify-content-between">
                                             @isset($total_sections)
-                                                <span>Total Sections: {{$total_sections}}</span>
+                                                <span>Σύνολο Τμημάτων: {{$total_sections}}</span>
                                             @endisset
                                             @can('edit classes')
-                                            <span><a href="{{route('class.edit', ['id' => $school_class->id])}}" class="btn btn-sm btn-outline-primary" role="button"><i class="bi bi-pencil"></i> Edit Class</a></span>
+                                            <span><a href="{{route('class.edit', ['id' => $school_class->id])}}" class="btn btn-sm btn-outline-primary" role="button"><i class="bi bi-pencil"></i> Επεξεργασία Τμήματος</a></span>
                                             @endcan
                                         </div>
                                     </div>

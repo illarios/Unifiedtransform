@@ -150,7 +150,7 @@
  				<div class="row">
         			<div class="col-md-16">
                                     	<label for="inputNotes" class="form-label">Σημειώσεις</label>
-                                  	<textarea rows="3" class="form-control" id="inputNotes" name="notes" placeholder="Notes"></textarea>
+                                  	<textarea rows="3" class="form-control" id="inputNotes" name="notes" placeholder="Σημειώσεις"></textarea>
 				</div>
 				</div>
                                 <input type="hidden" name="session_id" value="{{$current_school_session_id}}">

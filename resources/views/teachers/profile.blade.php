@@ -15,13 +15,13 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-person-lines-fill"></i> Teacher
+                        <i class="bi bi-person-lines-fill"></i> Δάσκαλος
                     </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                          <li class="breadcrumb-item"><a href="{{route('teacher.list.show')}}">Teacher List</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                          <li class="breadcrumb-item"><a href="{{route('home')}}">Αρχική</a></li>
+                          <li class="breadcrumb-item"><a href="{{route('teacher.list.show')}}">Λίστα Δασκάλων</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Προφίλ</li>
                         </ol>
                     </nav>
                     <div class="mb-4">
@@ -39,8 +39,8 @@
                                         <h5 class="card-title">{{$teacher->first_name}} {{$teacher->last_name}}</h5>
                                     </div>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Gender: {{$teacher->gender}}</li>
-                                        <li class="list-group-item">Phone: {{$teacher->phone}}</li>
+                                        <li class="list-group-item">Φύλο: {{$teacher->gender}}</li>
+                                        <li class="list-group-item">Τηλ: {{$teacher->phone}}</li>
                                     </ul>
                                 </div>
                             </div>
@@ -50,35 +50,35 @@
                                     <table class="table table-responsive mt-3">
                                         <tbody>
                                             <tr>
-                                                <th scope="row">First Name:</th>
+                                                <th scope="row">Όνομα:</th>
                                                 <td>{{$teacher->first_name}}</td>
-                                                <th>Last Name:</th>
+                                                <th>Επώνυμο:</th>
                                                 <td>{{$teacher->last_name}}</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Email:</th>
                                                 <td>{{$teacher->email}}</td>
-                                                <th scope="row">Nationality:</th>
+                                                <th scope="row">Εθνικότητα:</th>
                                                 <td>{{$teacher->nationality}}</td>
                                             </tr>
                                             <tr>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Address:</th>
+                                                <th scope="row">Διεύθυνση:</th>
                                                 <td>{{$teacher->address}}</td>
-                                                <th>Address2:</th>
+                                                <th>Διεύθυνση 2:</th>
                                                 <td>{{$teacher->address2}}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">City:</th>
+                                                <th scope="row">Πόλη:</th>
                                                 <td>{{$teacher->city}}</td>
-                                                <th>Zip:</th>
+                                                <th>Ταχ. Κώδικας:</th>
                                                 <td>{{$teacher->zip}}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Phone:</th>
+                                                <th scope="row">Τηλ:</th>
                                                 <td>{{$teacher->phone}}</td>
-                                                <th>Gender:</th>
+                                                <th>Φύλο:</th>
                                                 <td>{{$teacher->gender}}</td>
                                             </tr>
                                             <tr>

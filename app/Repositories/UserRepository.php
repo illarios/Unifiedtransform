@@ -83,8 +83,8 @@ class UserRepository implements UserInterface {
                     'photo'         => (!empty($request['photo']))?$this->convert($request['photo']):null,
                     'birthday'      => $request['birthday'],
                     'blood_type'    => $request['blood_type'],
-		            'role'          => 'student',
-		            'notes'	        => $request['notes'],
+		    'role'          => 'student',
+		    'notes'	    => $request['notes'],
                     'password'      => Hash::make($request['password']),
                 ]);
 
